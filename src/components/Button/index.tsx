@@ -8,15 +8,20 @@ interface Props {
     type: 'button' | 'submit' | 'reset' | undefined;
     google?: boolean;
     inverted?: boolean;
+    onClick?: () => void;
 }
 
 const cx = classNames.bind(styles);
 
 const Button: React.FC<Props> = (props) => {
-    const { children, type, google, inverted } = props;
+    const { children, type, google, inverted, onClick } = props;
 
     return (
-        <button type={type} className={cx('container', { google, inverted })}>
+        <button
+            type={type}
+            className={cx('container', { google, inverted })}
+            onClick={onClick}
+        >
             {children}
         </button>
     );
