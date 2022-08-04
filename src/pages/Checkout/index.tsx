@@ -2,14 +2,13 @@ import React from 'react';
 import classNames from 'classnames/bind';
 
 import styles from './Checkout.module.scss';
+import { checkoutItemMock } from 'src/mocks';
 
 import CheckoutItem from 'src/components/CheckoutItem';
 
 const cx = classNames.bind(styles);
 
 const Checkout: React.FC = () => {
-    const cartItems: any = [];
-
     return (
         <div className={cx('container')}>
             <div className={cx('header')}>
@@ -29,9 +28,10 @@ const Checkout: React.FC = () => {
                     <span>Remove</span>
                 </div>
             </div>
-            {cartItems.map((item: any) => (
+            {checkoutItemMock.map((item) => (
                 <CheckoutItem key={item.id} cartItem={item} />
             ))}
+            <span className={cx('total')}>Total: 0</span>
         </div>
     );
 };
