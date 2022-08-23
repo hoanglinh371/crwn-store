@@ -2,8 +2,8 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import { useNavigate } from 'react-router-dom';
 
-import styles from './DirectoryItem.module.scss';
 import { Directory as DirectoryProps } from 'src/interfaces/directory.interface';
+import styles from './DirectoryItem.module.scss';
 
 interface Props {
   directory: DirectoryProps;

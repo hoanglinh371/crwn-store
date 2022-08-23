@@ -1,7 +1,7 @@
 import { routeConfig } from './route.config';
 
 const configs = {
-    routeConfig,
+  routeConfig,
 };
 
 export default configs;

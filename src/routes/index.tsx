@@ -8,8 +8,8 @@ import Shop from '../pages/Shop';
 import Checkout from '../pages/Checkout';
 
 export const publicRoutes: RouteProps[] = [
-    { path: configs.routeConfig.home, element: <Home /> },
-    { path: configs.routeConfig.auth, element: <Auth /> },
-    { path: configs.routeConfig.shop, element: <Shop /> },
-    { path: configs.routeConfig.checkout, element: <Checkout /> },
+  { path: configs.routeConfig.home, element: <Home /> },
+  { path: configs.routeConfig.auth, element: <Auth /> },
+  { path: configs.routeConfig.shop, element: <Shop /> },
+  { path: configs.routeConfig.checkout, element: <Checkout /> },
 ];
