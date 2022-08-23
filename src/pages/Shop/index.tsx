@@ -1,21 +1,16 @@
 import React from 'react';
-import classNames from 'classnames/bind';
+import { Routes, Route } from 'react-router-dom';
 
-import SHOP_DATA from 'src/shop-data.json';
-import styles from './Shop.module.scss';
-
-import ProductCard from 'src/components/ProductCard';
-
-const cx = classNames.bind(styles);
+import CategoriesPreview from '../CategoriesPreview';
+import Category from '../Category';
 
 const Shop: React.FC = () => {
-    return (
-        <div className={cx('container')}>
-            {SHOP_DATA.map((product) => (
-                <ProductCard key={product.id} product={product} />
-            ))}
-        </div>
-    );
+  return (
+    <Routes>
+      <Route path='/' element={<CategoriesPreview />} />
+      <Route path='/:category' element={<Category />} />
+    </Routes>
+  );
 };
 
 export default Shop;

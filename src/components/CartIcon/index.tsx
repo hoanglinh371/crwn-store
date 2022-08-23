@@ -7,12 +7,12 @@ import styles from './CartIcon.module.scss';
 const cx = classNames.bind(styles);
 
 const CartIcon: React.FC = () => {
-    return (
-        <div className={cx('container')}>
-            <ShoppingIcon className={cx('shopping-icon')} />
-            <span className={cx('item-count')}>{0}</span>
-        </div>
-    );
+  return (
+    <div className={cx('container')}>
+      <ShoppingIcon className={cx('shopping-icon')} />
+      <span className={cx('item-count')}>{0}</span>
+    </div>
+  );
 };
 
 export default CartIcon;

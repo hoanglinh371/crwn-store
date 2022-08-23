@@ -7,27 +7,27 @@ import styles from './Input.module.scss';
 const cx = classNames.bind(styles);
 
 interface Props extends React.HTMLProps<HTMLInputElement> {
-    control?: Control<any, any>;
-    name: string;
-    label: string;
+  control?: Control<any, any>;
+  name: string;
+  label: string;
 }
 
 const Input: React.FC<Props> = ({ name, control, label, ...props }) => {
-    const id = useId();
-    const {
-        field,
-        fieldState: { error },
-    } = useController({ name, control });
+  const id = useId();
+  const {
+    field,
+    fieldState: { error },
+  } = useController({ name, control });
 
-    return (
-        <div className={cx('group')}>
-            <input id={id} className={cx('form-input')} {...field} {...props} />
-            <label className={cx('form-input-label')} htmlFor={id}>
-                {label}
-            </label>
-            {error && <p className={cx('error-message')}>{error.message}</p>}
-        </div>
-    );
+  return (
+    <div className={cx('group')}>
+      <input id={id} className={cx('form-input')} {...field} {...props} />
+      <label className={cx('form-input-label')} htmlFor={id}>
+        {label}
+      </label>
+      {error && <p className={cx('error-message')}>{error.message}</p>}
+    </div>
+  );
 };
 
 export default Input;

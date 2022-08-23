@@ -9,12 +9,12 @@ import SignUp from 'src/features/auth/components/SignUp';
 const cx = classNames.bind(styles);
 
 const Auth: React.FC = () => {
-    return (
-        <div className={cx('container')}>
-            <SignIn />
-            <SignUp />
-        </div>
-    );
+  return (
+    <div className={cx('container')}>
+      <SignIn />
+      <SignUp />
+    </div>
+  );
 };
 
 export default Auth;
