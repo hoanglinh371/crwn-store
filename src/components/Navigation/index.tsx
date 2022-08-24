@@ -5,8 +5,8 @@ import { ReactComponent as Logo } from 'src/assets/crown.svg';
 
 import styles from './Navigation.module.scss';
 
-import CartIcon from '../CartIcon';
-import CartDropdown from '../CartDropdown';
+import CartIcon from 'src/features/cart/components/CartIcon';
+import CartDropdown from 'src/features/cart/components/CartDropdown';
 
 const cx = classNames.bind(styles);
 

@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { cartItemMock } from 'src/mocks';
 import styles from './CartDropdown.module.scss';
 
-import Button from '../Button';
+import Button from 'src/components/Button';
 import CartItem from '../CartItem';
 
 const cx = classNames.bind(styles);
