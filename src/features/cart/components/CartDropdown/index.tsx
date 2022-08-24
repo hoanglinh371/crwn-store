@@ -1,17 +1,19 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import { useNavigate } from 'react-router-dom';
+import { useAppSelector } from 'src/app/hooks';
 
-import { cartItemMock } from 'src/mocks';
+import { selectCartItems } from '../../redux/cart.selectors';
 import styles from './CartDropdown.module.scss';
 
-import Button from '../Button';
+import Button from 'src/components/Button';
 import CartItem from '../CartItem';
 
 const cx = classNames.bind(styles);
 
 const CartDropdown: React.FC = () => {
   const navigate = useNavigate();
+  const cartItems = useAppSelector(selectCartItems);
 
   const goToCheckout = () => {
     navigate('/checkout');
@@ -20,7 +22,7 @@ const CartDropdown: React.FC = () => {
   return (
     <div className={cx('container')}>
       <div className={cx('cart-items')}>
-        {cartItemMock.map((item) => (
+        {cartItems.map((item) => (
           <CartItem key={item.id} cartItem={item} />
         ))}
       </div>

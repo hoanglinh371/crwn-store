@@ -1,14 +1,21 @@
 import React from 'react';
 import classNames from 'classnames/bind';
+import { useAppSelector } from 'src/app/hooks';
 
+import {
+  selectCartItems,
+  selectCartTotal,
+} from 'src/features/cart/redux/cart.selectors';
 import styles from './Checkout.module.scss';
-import { checkoutItemMock } from 'src/mocks';
 
 import CheckoutItem from 'src/components/CheckoutItem';
 
 const cx = classNames.bind(styles);
 
 const Checkout: React.FC = () => {
+  const cartItem = useAppSelector(selectCartItems);
+  const cartTotal = useAppSelector(selectCartTotal);
+
   return (
     <div className={cx('container')}>
       <div className={cx('header')}>
@@ -28,10 +35,9 @@ const Checkout: React.FC = () => {
           <span>Remove</span>
         </div>
       </div>
-      {checkoutItemMock.map((item) => (
-        <CheckoutItem key={item.id} cartItem={item} />
-      ))}
-      <span className={cx('total')}>Total: 0</span>
+      {cartItem &&
+        cartItem.map((item) => <CheckoutItem key={item.id} cartItem={item} />)}
+      <span className={cx('total')}>Total: ${cartTotal}</span>
     </div>
   );
 };
