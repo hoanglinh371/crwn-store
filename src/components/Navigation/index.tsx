@@ -2,7 +2,9 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 import { ReactComponent as Logo } from 'src/assets/crown.svg';
+import { useAppSelector } from 'src/app/hooks';
 
+import { selectIsCartDropdownOpen } from 'src/features/cart/redux/cart.selectors';
 import styles from './Navigation.module.scss';
 
 import CartIcon from 'src/features/cart/components/CartIcon';
@@ -11,6 +13,8 @@ import CartDropdown from 'src/features/cart/components/CartDropdown';
 const cx = classNames.bind(styles);
 
 const Navigation: React.FC = () => {
+  const isOpen = useAppSelector(selectIsCartDropdownOpen);
+
   return (
     <div className={cx('navigation')}>
       <Link className={cx('logo-container')} to='/'>
@@ -28,7 +32,7 @@ const Navigation: React.FC = () => {
         </Link>
         <CartIcon />
       </div>
-      <CartDropdown />
+      {isOpen && <CartDropdown />}
     </div>
   );
 };
