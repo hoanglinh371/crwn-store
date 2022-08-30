@@ -1,12 +1,13 @@
 import { RouteProps } from 'react-router-dom';
+import { lazy } from 'react';
 
 import configs from 'src/configs';
 
-import Auth from '../pages/Auth';
-import Home from '../pages/Home';
-import Shop from '../pages/Shop';
-import Checkout from '../pages/Checkout';
-import Contact from 'src/pages/Contact';
+const Home = lazy(() => import('../pages/Home'));
+const Contact = lazy(() => import('../pages/Contact'));
+const Auth = lazy(() => import('../pages/Auth'));
+const Shop = lazy(() => import('../pages/Shop'));
+const Checkout = lazy(() => import('../pages/Checkout'));
 
 export const publicRoutes: RouteProps[] = [
   { path: configs.routeConfig.home, element: <Home /> },
