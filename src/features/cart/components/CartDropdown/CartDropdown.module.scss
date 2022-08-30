@@ -27,3 +27,9 @@
     margin-top: auto;
   }
 }
+
+@media screen and (min-width: 0) and (max-width: 600px) {
+  .container {
+    right: 12px;
+  }
+}

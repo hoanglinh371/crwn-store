@@ -29,3 +29,13 @@
     font-size: 36px;
   }
 }
+
+@media screen and (min-width: 0) and (max-width: 600px) {
+  .container {
+    width: 80%;
+
+    .total {
+      font-size: 24px;
+    }
+  }
+}

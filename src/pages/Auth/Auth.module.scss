@@ -2,5 +2,13 @@
   display: flex;
   justify-content: space-between;
   width: 1200px;
-  margin: 30px auto;
+  margin: 32px auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    max-width: 100%;
+    flex-direction: column;
+    gap: 48px;
+  }
 }

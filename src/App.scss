@@ -10,3 +10,16 @@ a {
 body {
   padding: 20px 40px;
 }
+
+@media screen and (min-width: 0) and (max-width: 600px) {
+  body {
+    padding: 10px;
+    font-size: 75%;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 900px) {
+  body {
+    font-size: 87.5%;
+  }
+}

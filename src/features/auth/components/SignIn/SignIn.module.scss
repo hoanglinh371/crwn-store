@@ -4,11 +4,21 @@
   width: 480px;
 
   h2 {
-    margin: 10px 0;
+    margin: 8px 0;
   }
 
   .button-container {
     display: flex;
     justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+
+    .button-container {
+      gap: 24px;
+    }
   }
 }
