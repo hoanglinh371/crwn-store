@@ -8,7 +8,7 @@ import {
 } from 'src/features/cart/redux/cart.selectors';
 import styles from './Checkout.module.scss';
 
-import CheckoutItem from 'src/components/CheckoutItem';
+import CheckoutItem from 'src/features/cart/components/CheckoutItem';
 
 const cx = classNames.bind(styles);
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import { Directory as DirectoryProps } from 'src/interfaces/directory.interface';
 
-import Directory from 'src/components/Directory';
+import Directory from 'src/features/category/components/Directory';
 
 const Home: React.FC = () => {
   const directories: DirectoryProps[] = [

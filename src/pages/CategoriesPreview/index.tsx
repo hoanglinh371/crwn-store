@@ -1,5 +1,5 @@
 import React from 'react';
-import CategoryPreview from 'src/components/CategoryPreview';
+import CategoryPreview from 'src/features/category/components/CategoryPreview';
 
 import SHOP_DATA from 'src/shop-data';
 

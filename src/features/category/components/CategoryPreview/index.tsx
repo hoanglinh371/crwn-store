@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 import styles from './CategoryPreview.module.scss';
 
-import ProductCard from '../ProductCard';
+import ProductCard from '../../../../components/ProductCard';
 import { Product } from 'src/interfaces/product.interface';
 
 interface Props {
