@@ -4,7 +4,7 @@
   margin-bottom: 32px;
 
   .title {
-    font-size: 28px;
+    font-size: 1.75rem;
     margin-bottom: 24px;
     cursor: pointer;
     font-family: cursive;
@@ -14,17 +14,8 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 20px;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .container {
-    .title {
-      margin-bottom: 12px;
-      font-size: 20px;
-    }
-
-    .preview {
+    @media screen and (max-width: 600px) {
       grid-template-columns: 1fr 1fr;
       row-gap: 32px;
       column-gap: 10px;

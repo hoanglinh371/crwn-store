@@ -4,7 +4,7 @@
   min-height: 100px;
   border-bottom: 1px solid darkgrey;
   padding: 16px 0;
-  font-size: 20px;
+  font-size: 1rem;
   align-items: center;
 
   .image-container {
@@ -32,26 +32,14 @@
 
     .value {
       margin: 0 10px;
+
+      @media screen and (max-width: 600px) {
+        margin: 0;
+      }
     }
   }
 
   .remove-button {
-    padding-left: 12px;
     cursor: pointer;
-  }
-}
-
-@media screen and (min-width: 0) and (max-width: 600px) {
-  .container {
-    font-size: 16px;
-
-    .quantity .value {
-      margin: 0;
-      font-size: 12px;
-    }
-
-    .quantity .arrow {
-      font-size: 12px;
-    }
   }
 }

@@ -7,19 +7,24 @@ a {
   text-decoration: none;
 }
 
+ul li {
+  list-style: none;
+}
+
+html {
+  font-size: 100%;
+}
+
 body {
   padding: 20px 40px;
 }
 
-@media screen and (min-width: 0) and (max-width: 600px) {
-  body {
-    padding: 10px;
+@media screen and (max-width: 600px) {
+  html {
     font-size: 75%;
   }
-}
 
-@media screen and (min-width: 601px) and (max-width: 900px) {
   body {
-    font-size: 87.5%;
+    padding: 10px;
   }
 }
