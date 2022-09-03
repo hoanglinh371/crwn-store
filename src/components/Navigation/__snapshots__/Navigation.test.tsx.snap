@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation component Should_MatchSnapshot 1`] = `
+<div>
+  <div
+    class="navigation"
+  >
+    <a
+      class="logo-container"
+      href="/"
+    >
+      <svg>
+        crown.svg
+      </svg>
+    </a>
+    <div
+      class="nav-links-container"
+    >
+      <a
+        class="nav-link"
+        href="/shop"
+      >
+        SHOP
+      </a>
+      <a
+        class="nav-link"
+        href="/contact"
+      >
+        CONTACT
+      </a>
+      <a
+        class="nav-link"
+        href="/auth"
+      >
+        LOGIN
+      </a>
+      <div
+        class="container"
+      >
+        <svg
+          class="shopping-icon"
+        >
+          shopping-bag.svg
+        </svg>
+        <span
+          class="item-count"
+        >
+          0
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

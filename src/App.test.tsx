@@ -1,15 +1,20 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 import { Provider } from 'react-redux';
-import { store } from './app/store';
+import { BrowserRouter } from 'react-router-dom';
+
+import { store } from 'src/app/store';
 import App from './App';
 
-test('renders learn react link', () => {
-  const { getByText } = render(
+describe('App component', () => {
+  const { container } = render(
     <Provider store={store}>
-      <App />
-    </Provider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Provider>,
   );
 
-  expect(getByText(/learn/i)).toBeInTheDocument();
+  it('Should_MatchSnapshot', () => {
+    expect(container).toMatchSnapshot();
+  });
 });

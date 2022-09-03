@@ -24,7 +24,9 @@ const ProductCard: React.FC<Props> = ({ product }) => {
     <div className={cx('container')}>
       <img src={imageUrl} alt={name} />
       <div className={cx('footer')}>
-        <span className={cx('name')}>{name}</span>
+        <span aria-label='name' className={cx('name')}>
+          {name}
+        </span>
         <span className={cx('price')}>${price}</span>
       </div>
       <Button type='button' inverted onClick={handleAddToCart}>

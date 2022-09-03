@@ -18,6 +18,7 @@ const Button: React.FC<Props> = (props) => {
 
   return (
     <button
+      aria-label='button'
       type={type}
       className={cx('container', { google, inverted })}
       onClick={onClick}

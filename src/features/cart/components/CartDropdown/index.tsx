@@ -1,9 +1,10 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 import { useNavigate } from 'react-router-dom';
-import { useAppSelector } from 'src/app/hooks';
+import { useAppSelector, useAppDispatch } from 'src/app/hooks';
 
 import { selectCartItems } from '../../redux/cart.selectors';
+import { toggleCartDropdown } from '../../redux/cart.slice';
 import styles from './CartDropdown.module.scss';
 
 import Button from 'src/components/Button';
@@ -13,10 +14,12 @@ const cx = classNames.bind(styles);
 
 const CartDropdown: React.FC = () => {
   const navigate = useNavigate();
+  const dispatch = useAppDispatch();
   const cartItems = useAppSelector(selectCartItems);
 
   const goToCheckout = () => {
     navigate('/checkout');
+    dispatch(toggleCartDropdown());
   };
 
   return (

@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`App component Should_MatchSnapshot 1`] = `
+<div>
+  <div
+    class="overlay"
+  >
+    <div
+      class="container"
+    />
+  </div>
+</div>
+`;

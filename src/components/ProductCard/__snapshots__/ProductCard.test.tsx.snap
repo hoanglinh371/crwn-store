@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard component Should_MatchSnapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <img
+      alt="Red Hat"
+      src="red-hat-image"
+    />
+    <div
+      class="footer"
+    >
+      <span
+        aria-label="name"
+        class="name"
+      >
+        Red Hat
+      </span>
+      <span
+        class="price"
+      >
+        $
+        99
+      </span>
+    </div>
+    <button
+      aria-label="button"
+      class="container inverted"
+      type="button"
+    >
+      Add To Cart
+    </button>
+  </div>
+</div>
+`;

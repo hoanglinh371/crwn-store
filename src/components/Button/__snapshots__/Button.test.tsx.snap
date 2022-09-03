@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button component Should_MatchSnapshot 1`] = `
+<div>
+  <button
+    aria-label="button"
+    class="container google"
+    type="button"
+  >
+    Click here!
+  </button>
+</div>
+`;
