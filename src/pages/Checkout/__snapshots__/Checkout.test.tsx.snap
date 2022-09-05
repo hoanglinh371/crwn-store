@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout component Should_MatchSnapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="header"
+    >
+      <div
+        class="header-block"
+      >
+        <span>
+          Product
+        </span>
+      </div>
+      <div
+        class="header-block"
+      >
+        <span>
+          Description
+        </span>
+      </div>
+      <div
+        class="header-block"
+      >
+        <span>
+          Quantity
+        </span>
+      </div>
+      <div
+        class="header-block"
+      >
+        <span>
+          Price
+        </span>
+      </div>
+      <div
+        class="header-block"
+      >
+        <span>
+          Remove
+        </span>
+      </div>
+    </div>
+    <span
+      class="total"
+    >
+      Total: $
+      0
+    </span>
+  </div>
+</div>
+`;

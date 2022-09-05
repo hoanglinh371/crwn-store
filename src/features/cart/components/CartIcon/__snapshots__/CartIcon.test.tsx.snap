@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartIcon component Should_MatchSnapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <svg
+      class="shopping-icon"
+    >
+      shopping-bag.svg
+    </svg>
+    <span
+      class="item-count"
+    >
+      0
+    </span>
+  </div>
+</div>
+`;

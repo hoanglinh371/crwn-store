@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CartItem component Should_MatchSnapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <img
+      alt="Koi Ring"
+      aria-label="image"
+      src="koi-ring.png"
+    />
+    <div
+      class="item-details"
+    >
+      <span
+        class="name"
+      >
+        Koi Ring
+      </span>
+      <span
+        class="price"
+      >
+        2
+         x $
+        50
+      </span>
+    </div>
+  </div>
+</div>
+`;

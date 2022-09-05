@@ -15,7 +15,7 @@ const CartItem: React.FC<Props> = ({ cartItem }) => {
 
   return (
     <div className={cx('container')}>
-      <img src={imageUrl} alt={name} />
+      <img aria-label='image' src={imageUrl} alt={name} />
       <div className={cx('item-details')}>
         <span className={cx('name')}>{name}</span>
         <span className={cx('price')}>

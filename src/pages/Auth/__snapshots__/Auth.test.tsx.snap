@@ -1,0 +1,161 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Auth component Should_MatchSnapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <h2>
+        Already have an account?
+      </h2>
+      <span>
+        Sign in with your email and password
+      </span>
+      <form>
+        <div
+          class="group"
+        >
+          <input
+            class="form-input"
+            id=":r0:"
+            name="email"
+            type="email"
+            value=""
+          />
+          <label
+            class="form-input-label"
+            for=":r0:"
+          >
+            Email
+          </label>
+        </div>
+        <div
+          class="group"
+        >
+          <input
+            class="form-input"
+            id=":r1:"
+            name="password"
+            type="password"
+            value=""
+          />
+          <label
+            class="form-input-label"
+            for=":r1:"
+          >
+            Password
+          </label>
+        </div>
+        <div
+          class="button-container"
+        >
+          <button
+            aria-label="button"
+            class="container"
+            type="submit"
+          >
+            Sign In
+          </button>
+          <button
+            aria-label="button"
+            class="container google"
+            type="button"
+          >
+            Google Sign In
+          </button>
+        </div>
+      </form>
+    </div>
+    <div
+      class="container"
+    >
+      <h2>
+        Don't have an account?
+      </h2>
+      <span>
+        Sign up with your email and password
+      </span>
+      <form>
+        <div
+          class="group"
+        >
+          <input
+            class="form-input"
+            id=":r2:"
+            name="displayName"
+            type="text"
+            value=""
+          />
+          <label
+            class="form-input-label"
+            for=":r2:"
+          >
+            Display Name
+          </label>
+        </div>
+        <div
+          class="group"
+        >
+          <input
+            class="form-input"
+            id=":r3:"
+            name="email"
+            type="email"
+            value=""
+          />
+          <label
+            class="form-input-label"
+            for=":r3:"
+          >
+            Email
+          </label>
+        </div>
+        <div
+          class="group"
+        >
+          <input
+            class="form-input"
+            id=":r4:"
+            name="password"
+            type="password"
+            value=""
+          />
+          <label
+            class="form-input-label"
+            for=":r4:"
+          >
+            Password
+          </label>
+        </div>
+        <div
+          class="group"
+        >
+          <input
+            class="form-input"
+            id=":r5:"
+            name="confirmPassword"
+            type="password"
+            value=""
+          />
+          <label
+            class="form-input-label"
+            for=":r5:"
+          >
+            Confirm Password
+          </label>
+        </div>
+        <button
+          aria-label="button"
+          class="container"
+          type="submit"
+        >
+          Sign Up
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

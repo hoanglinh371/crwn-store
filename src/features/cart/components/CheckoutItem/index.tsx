@@ -9,10 +9,11 @@ import {
   removeProduct,
   clearProduct,
 } from 'src/features/cart/redux/cart.slice';
+import { CartItem as CartItemProps } from 'src/features/cart/redux/cart.types';
 import styles from './CheckoutItem.module.scss';
 
 interface Props {
-  cartItem: any;
+  cartItem: CartItemProps;
 }
 
 const cx = classNames.bind(styles);
@@ -32,18 +33,32 @@ const CheckoutItem: React.FC<Props> = ({ cartItem }) => {
       <div className={cx('image-container')}>
         <img src={imageUrl} alt={name} />
       </div>
-      <span className={cx('name')}>{name}</span>
+      <span aria-label='name' className={cx('name')}>
+        {name}
+      </span>
       <span className={cx('quantity')}>
-        <div className={cx('arrow')} onClick={handleRemoveProduct}>
+        <div
+          aria-label='dec-btn'
+          className={cx('arrow')}
+          onClick={handleRemoveProduct}
+        >
           <FaChevronLeft />
         </div>
         <span className={cx('value')}>{quantity}</span>
-        <div className={cx('arrow')} onClick={handleAddProduct}>
+        <div
+          aria-label='inc-btn'
+          className={cx('arrow')}
+          onClick={handleAddProduct}
+        >
           <FaChevronRight />
         </div>
       </span>
       <span className={cx('price')}>${price}</span>
-      <div className={cx('remove-button')} onClick={handleClearProduct}>
+      <div
+        aria-label='del-btn'
+        className={cx('remove-button')}
+        onClick={handleClearProduct}
+      >
         <IoClose />
       </div>
     </div>

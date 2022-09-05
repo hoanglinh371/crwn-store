@@ -1,0 +1,100 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkout component Should_MatchSnapshot 1`] = `
+<div>
+  <div
+    class="container"
+  >
+    <div
+      class="container"
+    >
+      <div
+        class="bg-image"
+        style="background-image: url(https://i.ibb.co/cvpntL1/hats.png);"
+      />
+      <div
+        class="body-container"
+      >
+        <h2>
+          hats
+        </h2>
+        <p>
+          Shop Now
+        </p>
+      </div>
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="bg-image"
+        style="background-image: url(https://i.ibb.co/px2tCc3/jackets.png);"
+      />
+      <div
+        class="body-container"
+      >
+        <h2>
+          jackets
+        </h2>
+        <p>
+          Shop Now
+        </p>
+      </div>
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="bg-image"
+        style="background-image: url(https://i.ibb.co/0jqHpnp/sneakers.png);"
+      />
+      <div
+        class="body-container"
+      >
+        <h2>
+          sneakers
+        </h2>
+        <p>
+          Shop Now
+        </p>
+      </div>
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="bg-image"
+        style="background-image: url(https://i.ibb.co/GCCdy8t/womens.png);"
+      />
+      <div
+        class="body-container"
+      >
+        <h2>
+          womens
+        </h2>
+        <p>
+          Shop Now
+        </p>
+      </div>
+    </div>
+    <div
+      class="container"
+    >
+      <div
+        class="bg-image"
+        style="background-image: url(https://i.ibb.co/R70vBrQ/men.png);"
+      />
+      <div
+        class="body-container"
+      >
+        <h2>
+          mens
+        </h2>
+        <p>
+          Shop Now
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
