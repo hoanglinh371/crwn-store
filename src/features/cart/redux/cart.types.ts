@@ -1,9 +1,4 @@
-export interface Product {
-  id: number;
-  name: string;
-  imageUrl: string;
-  price: number;
-}
+import { Product } from 'src/features/product/redux/product.types';
 
 export interface CartItem extends Product {
   quantity: number;

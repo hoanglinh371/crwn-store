@@ -2,11 +2,10 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import { Link } from 'react-router-dom';
 
+import { Product } from 'src/features/product/redux/product.types';
 import styles from './CategoryPreview.module.scss';
 
 import ProductCard from '../../../../components/ProductCard';
-import { Product } from 'src/interfaces/product.interface';
-
 interface Props {
   title: string;
   products: Product[];
@@ -24,7 +23,7 @@ const CategoryPreview: React.FC<Props> = ({ title, products }) => {
         {products
           .filter((_, i) => i < 4)
           .map((product) => (
-            <ProductCard key={product.id} product={product} />
+            <ProductCard key={product._id} product={product} />
           ))}
       </div>
     </div>

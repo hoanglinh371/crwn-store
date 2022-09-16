@@ -8,6 +8,7 @@ const Contact = lazy(() => import('../pages/Contact'));
 const Auth = lazy(() => import('../pages/Auth'));
 const Shop = lazy(() => import('../pages/Shop'));
 const Checkout = lazy(() => import('../pages/Checkout'));
+const Admin = lazy(() => import('../pages/Admin'));
 
 export const publicRoutes: RouteProps[] = [
   { path: configs.routeConfig.home, element: <Home /> },
@@ -15,4 +16,5 @@ export const publicRoutes: RouteProps[] = [
   { path: configs.routeConfig.auth, element: <Auth /> },
   { path: configs.routeConfig.shop, element: <Shop /> },
   { path: configs.routeConfig.checkout, element: <Checkout /> },
+  { path: configs.routeConfig.admin, element: <Admin /> },
 ];

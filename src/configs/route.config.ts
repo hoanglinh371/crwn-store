@@ -5,4 +5,5 @@ export const routeConfig = {
   shop: '/shop/*',
   checkout: '/checkout',
   category: '/category',
+  admin: '/admin/*',
 };

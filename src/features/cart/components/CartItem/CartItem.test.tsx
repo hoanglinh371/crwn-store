@@ -1,11 +1,12 @@
 import { cleanup, render, screen } from '@testing-library/react';
 
-import { CartItem as CartItemProps } from 'src/interfaces/product.interface';
+import { CartItem as CartItemProps } from 'src/features/cart/redux/cart.types';
 import CartItem from '.';
 
 const mockCartItem: CartItemProps = {
-  id: 1,
+  _id: '1234',
   name: 'Koi Ring',
+  category: 'hat',
   imageUrl: 'koi-ring.png',
   price: 50,
   quantity: 2,

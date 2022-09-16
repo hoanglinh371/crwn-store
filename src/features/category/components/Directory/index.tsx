@@ -15,7 +15,7 @@ const Directory: React.FC<Props> = ({ directories }) => {
   return (
     <div className={cx('container')}>
       {directories.map((directory) => (
-        <DirectoryItem key={directory.id} directory={directory} />
+        <DirectoryItem key={directory._id} directory={directory} />
       ))}
     </div>
   );

@@ -26,7 +26,7 @@ const CartDropdown: React.FC = () => {
     <div className={cx('container')}>
       <div className={cx('cart-items')}>
         {cartItems.map((item) => (
-          <CartItem key={item.id} cartItem={item} />
+          <CartItem key={item._id} cartItem={item} />
         ))}
       </div>
       <Button type='button' onClick={goToCheckout}>

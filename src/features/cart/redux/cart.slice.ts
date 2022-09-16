@@ -1,6 +1,6 @@
 import { createSlice } from '@reduxjs/toolkit';
 
-import { CartItem } from 'src/interfaces/product.interface';
+import { CartItem } from './cart.types';
 
 export interface CartState {
   isOpen: boolean;
@@ -22,11 +22,11 @@ const cartSlice = createSlice({
 
     addProduct: (state, action) => {
       const existingCartItem = state.cartItems.find(
-        (cartItem) => cartItem.id === action.payload.id,
+        (cartItem) => cartItem._id === action.payload._id,
       );
       if (existingCartItem) {
         state.cartItems = state.cartItems.map((cartItem) =>
-          cartItem.id === action.payload.id
+          cartItem._id === action.payload._id
             ? { ...cartItem, quantity: cartItem.quantity + 1 }
             : cartItem,
         );
@@ -40,15 +40,15 @@ const cartSlice = createSlice({
 
     removeProduct: (state, action) => {
       const existingCartItem = state.cartItems.find(
-        (cartItem) => cartItem.id === action.payload.id,
+        (cartItem) => cartItem._id === action.payload._id,
       );
       if (existingCartItem?.quantity === 1) {
         state.cartItems = state.cartItems.filter(
-          (cartItem) => cartItem.id !== action.payload.id,
+          (cartItem) => cartItem._id !== action.payload._id,
         );
       }
       state.cartItems = state.cartItems.map((cartItem) =>
-        cartItem.id === action.payload.id
+        cartItem._id === action.payload._id
           ? { ...cartItem, quantity: cartItem.quantity - 1 }
           : cartItem,
       );
@@ -56,7 +56,7 @@ const cartSlice = createSlice({
 
     clearProduct: (state, action) => {
       state.cartItems = state.cartItems.filter(
-        (cartItem) => cartItem.id !== action.payload.id,
+        (cartItem) => cartItem._id !== action.payload._id,
       );
     },
   },

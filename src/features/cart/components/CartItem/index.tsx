@@ -1,7 +1,7 @@
 import React from 'react';
 import classNames from 'classnames/bind';
 
-import { CartItem as CartItemProps } from 'src/interfaces/product.interface';
+import { CartItem as CartItemProps } from '../../redux/cart.types';
 import styles from './CartItem.module.scss';
 
 interface Props {

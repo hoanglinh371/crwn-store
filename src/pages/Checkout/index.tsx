@@ -36,7 +36,7 @@ const Checkout: React.FC = () => {
         </div>
       </div>
       {cartItem &&
-        cartItem.map((item) => <CheckoutItem key={item.id} cartItem={item} />)}
+        cartItem.map((item) => <CheckoutItem key={item._id} cartItem={item} />)}
       <span className={cx('total')}>Total: ${cartTotal}</span>
     </div>
   );

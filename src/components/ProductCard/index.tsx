@@ -2,7 +2,7 @@ import React from 'react';
 import classNames from 'classnames/bind';
 import { useAppDispatch } from 'src/app/hooks';
 
-import { Product } from 'src/interfaces/product.interface';
+import { Product } from 'src/features/product/redux/product.types';
 import { addProduct } from 'src/features/cart/redux/cart.slice';
 import styles from './ProductCard.module.scss';
 

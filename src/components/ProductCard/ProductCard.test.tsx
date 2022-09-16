@@ -2,12 +2,13 @@ import { cleanup, render, screen } from '@testing-library/react';
 import { Provider } from 'react-redux';
 
 import { store } from 'src/app/store';
-import { Product } from 'src/interfaces/product.interface';
+import { Product } from 'src/features/product/redux/product.types';
 import ProductCard from '.';
 
 const mockProduct: Product = {
-  id: 1,
+  _id: '123456789',
   name: 'Red Hat',
+  category: 'hat',
   imageUrl: 'red-hat-image',
   price: 99,
 };
