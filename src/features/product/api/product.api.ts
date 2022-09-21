@@ -2,9 +2,9 @@ import axiosClient from 'src/api/axiosClient';
 import apiConfig from 'src/configs/api.config';
 
 const productAPI = {
-  getProducts: () => {
+  getProducts: (page?: number) => {
     const url = `${apiConfig.baseURL}/products`;
-    return axiosClient.get(url);
+    return axiosClient.get(url, { params: { page: page } });
   },
 
   getProductsByCategory: (category: string) => {
